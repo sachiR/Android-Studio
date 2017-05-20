@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bgLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.example.sachi.celsiusfahrenheit.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.08"
+        android:text="Convert Your Temperature"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/temperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.26"
+        android:inputType="numberDecimal"/>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_weight="0.12">
+
+        <RadioButton
+            android:id="@+id/celsiusRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Celsius to Fahrenheit conversion" />
+
+        <RadioButton
+            android:id="@+id/fahrenheitRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Fahrenheit to Celsius conversion" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/convert_button"
+        android:layout_width="97dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="numberDecimal"
+        android:onClick="convertTempChange"
+        android:text="Convert" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.49" />
+
+    <Button
+        android:id="@+id/setting_button"
+        android:layout_width="43dp"
+        android:layout_height="42dp"
+        android:layout_gravity="right"
+        android:background="@drawable/more" />
+
+</LinearLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    tools:context="calculator.javahelps.com.quicksum.SecondActivity">
+
+
+    <TextView
+        android:id="@+id/colourView"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:text="Select A Colour:"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:layout_weight="0.02" />
+
+    <TextView
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="0.44"
+        android:text="Select a colour for the Answer window:"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="152dp"
+        android:columnCount="6"
+        android:rowCount="1"
+        android:layout_weight="0.24">
+
+        <Button
+            android:id="@+id/btRed"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:background="@android:color/holo_red_dark"
+            android:onClick="onClickTopColour"
+            android:text="RED" />
+
+        <Button
+            android:id="@+id/btWhite"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:background="@android:color/white"
+            android:onClick="onClickTopColour"
+            android:text="WHITE" />
+
+        <Button
+            android:id="@+id/btBlue"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:background="@android:color/holo_blue_dark"
+            android:onClick="onClickTopColour"
+            android:text="BLUE" />
+
+        <Button
+            android:id="@+id/btYellow"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_column="3"
+            android:layout_row="0"
+            android:background="#fdf444"
+            android:onClick="onClickTopColour"
+            android:text="YELLOW" />
+
+        <Button
+            android:id="@+id/btGreen"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_column="5"
+            android:layout_row="0"
+            android:background="@android:color/holo_green_dark"
+            android:onClick="onClickTopColour"
+            android:text="GREEN" />
+
+        <Button
+            android:id="@+id/btBlack"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_column="4"
+            android:layout_row="0"
+            android:background="@android:color/black"
+            android:onClick="onClickTopColour"
+            android:text="BLACK" />
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/bottomView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_weight="0.51"
+        android:text="Select a colour for the KeyPad:"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="179dp"
+        android:columnCount="6"
+        android:rowCount="1">
+
+        <Button
+            android:id="@+id/bbRed"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:background="@android:color/holo_red_dark"
+            android:onClick="onClickBottomColour"
+            android:text="RED" />
+
+        <Button
+            android:id="@+id/bbWhite"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:background="@android:color/white"
+            android:onClick="onClickBottomColour"
+            android:text="WHITE" />
+
+        <Button
+            android:id="@+id/bbBlue"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:background="@android:color/holo_blue_dark"
+            android:onClick="onClickBottomColour"
+            android:text="BLUE" />
+
+        <Button
+            android:id="@+id/bbYellow"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_column="3"
+            android:layout_row="0"
+            android:background="#fdf444"
+            android:onClick="onClickBottomColour"
+            android:text="YELLOW" />
+
+        <Button
+            android:id="@+id/bbGreen"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_column="5"
+            android:layout_row="0"
+            android:background="@android:color/holo_green_dark"
+            android:onClick="onClickBottomColour"
+            android:text="GREEN" />
+
+        <Button
+            android:id="@+id/bbBlack"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_column="4"
+            android:layout_row="0"
+            android:background="@android:color/black"
+            android:onClick="onClickBottomColour"
+            android:text="BLACK" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/bBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.02"
+        android:text="Back" />
+</LinearLayout>

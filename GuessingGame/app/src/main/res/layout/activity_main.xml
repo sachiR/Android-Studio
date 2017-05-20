@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_columnSpan="2"
+    android:layout_rowSpan="3"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    android:screenOrientation="portrait"
+    android:weightSum="1"
+    tools:context="com.example.sachi.guessinggame.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:text="Guess A Number"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:text="Enter Number:"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/guessText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Settings" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.33"
+        android:background="@android:color/transparent"
+        android:columnCount="2"
+        android:rowCount="3">
+
+        <TextView
+            android:id="@+id/minView"
+            android:layout_width="136dp"
+            android:layout_height="53dp"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:text="Min:"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/maxView"
+            android:layout_width="136dp"
+            android:layout_height="53dp"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:text="Max:"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+        <SeekBar
+            android:id="@+id/minBar"
+            android:layout_width="274dp"
+            android:layout_height="53dp"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:padding="30dp"
+            android:visibility="invisible" />
+
+        <SeekBar
+            android:id="@+id/maxBar"
+            android:layout_width="274dp"
+            android:layout_height="53dp"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:padding="30dp"
+            android:visibility="invisible" />
+
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.35"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
