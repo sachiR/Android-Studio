@@ -44,7 +44,7 @@ public class HighestScoreActivity extends AppCompatActivity {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.buttonReset:
-                Intent intent = new Intent(HighestScoreActivity.this, MainActivity.class);
+                Intent intent = new Intent(HighestScoreActivity.this, GameActivity.class);
                 startActivity(intent);
                 break;
             case R.id.buttonHome:

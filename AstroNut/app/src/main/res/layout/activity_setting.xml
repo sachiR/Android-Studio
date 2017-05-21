@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:orientation="vertical"
+android:layout_height="match_parent"
+android:background="@drawable/settings_background"
+tools:context="co.dev.rsp.astronut.SettingActivity">
+
+<TextView
+    android:id="@+id/textView0"
+    android:layout_width="match_parent"
+    android:layout_height="124dp" />
+
+<TextView
+    android:id="@+id/textView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/general_options"
+    android:textColor="@android:color/white"
+    android:textSize="30sp" />
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/divide_line"
+    android:textColor="@android:color/white" />
+
+<GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="2"
+    android:rowCount="3">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_marginTop="10dp"
+        android:layout_row="0"
+        android:text="@string/enter_name"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/userNameText"
+        android:layout_width="248dp"
+        android:layout_height="69dp"
+        android:textSize="30sp"
+        android:layout_column="1"
+        android:layout_marginTop="10dp"
+        android:layout_row="0"
+        android:inputType="textPersonName"
+        android:labelFor="@+id/userNameText"
+        android:textColor="@android:color/white" />
+
+
+</GridLayout>
+
+<GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:columnCount="2"
+    android:rowCount="1">
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_marginTop="10dp"
+        android:layout_row="0"
+        android:onClick="onSave"
+        android:text="@string/save" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_marginTop="10dp"
+        android:layout_row="0"
+        android:onClick="onReset"
+        android:text="@string/reset" />
+
+</GridLayout>
+
+</LinearLayout>
+

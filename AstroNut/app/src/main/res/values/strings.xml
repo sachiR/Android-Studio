@@ -7,4 +7,9 @@
     <string name="highest_score">Highest score:</string>
     <string name="divide_line">_________________</string>
     <string name="your_score">Your score:</string>
+    <string name="play_game">Play A New Game</string>
+    <string name="general_options">General Options</string>
+    <string name="enter_name">Enter A Name</string>
+    <string name="save">Save</string>
+    <string name="reset">Reset</string>
 </resources>
