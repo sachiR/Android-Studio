@@ -6,12 +6,16 @@ import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
 
 public class SettingActivity extends AppCompatActivity {
 
+    Button shareButton;
+    Intent shareIntent;
+    String shareBody = " This is a great App, You should try it out!";
     EditText userName;
     SharedPreferences myPrefs;
     private static final String USER_NAME = "key_name";
@@ -23,6 +27,23 @@ public class SettingActivity extends AppCompatActivity {
         myPrefs = getPreferences(MODE_PRIVATE);
         //this retrieves a default preference file that belong to the activity. Same name as the project name with xml extension.
         init();
+
+        shareContent();
+    }
+
+    private void shareContent() {
+        shareButton = (Button)findViewById(R.id.buttonShare);
+        shareButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                shareIntent = new Intent(Intent.ACTION_SEND);
+                shareIntent.setType("text/plain");
+                shareIntent.putExtra(Intent.EXTRA_SUBJECT,"My App");
+                shareIntent.putExtra(Intent.EXTRA_TEXT,shareBody);
+                startActivity(Intent.createChooser(shareIntent,"Share via"));
+
+            }
+        });
     }
 
     private void init() {

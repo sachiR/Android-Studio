@@ -5,20 +5,26 @@ import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.ImageButton;
+
+
 
 public class MainActivity extends AppCompatActivity {
 
     ImageButton newGameBtn, settingsBtn;
     Intent intent;
     MediaPlayer mediaPlayer;
+    public static int musicChecked = 0; // music is on
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        backgroundMusic();
+        musicPlay();
 
         newGameBtn = (ImageButton) findViewById(R.id.game_button);
         newGameBtn.setOnClickListener(new View.OnClickListener() {
@@ -42,10 +48,10 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void backgroundMusic() {
+    private void musicPlay() {
         //start playing the media player
-        mediaPlayer = MediaPlayer.create(this, R.raw.background_app_music);
+        mediaPlayer = MediaPlayer.create(MainActivity.this, R.raw.background_app_music);
+        mediaPlayer.setLooping(true);
         mediaPlayer.start();
     }
 }
-

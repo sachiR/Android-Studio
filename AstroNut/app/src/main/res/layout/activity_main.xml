@@ -5,7 +5,8 @@ android:orientation="vertical"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-tools:context="co.dev.rsp.astronut.MainActivity">
+tools:context="co.dev.rsp.astronut.MainActivity"
+    android:weightSum="1">
 
 <ImageButton
     android:id="@+id/game_button"
@@ -24,5 +25,9 @@ tools:context="co.dev.rsp.astronut.MainActivity">
     android:layout_gravity="center"
     android:src="@drawable/setting_button"
     android:contentDescription="@string/settings"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="184dp" />
 
 </LinearLayout>

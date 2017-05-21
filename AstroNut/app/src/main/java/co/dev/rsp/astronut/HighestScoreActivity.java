@@ -11,6 +11,7 @@ import android.widget.Toast;
 public class HighestScoreActivity extends AppCompatActivity {
 
     TextView textScoreView, textHighScoreView;
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,14 +45,16 @@ public class HighestScoreActivity extends AppCompatActivity {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.buttonReset:
-                Intent intent = new Intent(HighestScoreActivity.this, GameActivity.class);
+                intent = new Intent(HighestScoreActivity.this, GameActivity.class);
                 startActivity(intent);
                 break;
             case R.id.buttonHome:
-                Toast.makeText(HighestScoreActivity.this, "This is the home button", Toast.LENGTH_SHORT).show();
+                intent = new Intent(HighestScoreActivity.this, MainActivity.class);
+                startActivity(intent);
                 break;
             case  R.id.buttonSettings:
-                Toast.makeText(HighestScoreActivity.this, "This is the settings button", Toast.LENGTH_SHORT).show();
+                intent = new Intent(HighestScoreActivity.this, SettingActivity.class);
+                startActivity(intent);
                 break;
         }
     }

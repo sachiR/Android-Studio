@@ -65,7 +65,7 @@ public class GameActivity extends AppCompatActivity {
 
     //show current total score for the user
     private void updateScore(int totalScore){
-        currentTotalScoreView.setText(""+totalScore+"/"+questionBack.getLength());
+        currentTotalScoreView.setText("Score: "+totalScore+"/"+questionBack.getLength());
     }
 
     public void onClick(View view){
