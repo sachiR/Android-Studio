@@ -29,36 +29,30 @@
         android:text="@string/divide_line"
         android:textColor="@android:color/white" />
 
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.05"
-        android:columnCount="2"
-        android:rowCount="2">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="225dp"
+            android:layout_height="37dp"
             android:layout_column="0"
             android:layout_marginTop="10dp"
             android:layout_row="0"
             android:text="@string/enter_name"
             android:textColor="@android:color/white" />
 
-        <EditText
-            android:id="@+id/userNameText"
-            android:layout_width="239dp"
-            android:layout_height="69dp"
-            android:layout_column="1"
-            android:layout_gravity="end"
-            android:layout_marginTop="10dp"
-            android:layout_row="0"
-            android:inputType="textPersonName"
-            android:labelFor="@+id/userNameText"
-            android:textColor="@android:color/white"
-            android:textSize="30sp" />
+    <EditText
+        android:id="@+id/userNameText"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_column="1"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:layout_row="0"
+        android:inputType="textPersonName"
+        android:labelFor="@+id/userNameText"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:layout_weight="0.07" />
 
-    </GridLayout>
 
     <GridLayout
         android:layout_width="match_parent"
