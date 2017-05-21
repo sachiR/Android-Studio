@@ -1,10 +1,10 @@
 package co.dev.rsp.astronut;
 
 // This file contains questions from Question
-public class Questions {
+class Questions {
 
     // array of images of questions
-    public int[] question_images_list = {
+    private int[] question_images_list = {
             R.drawable.andromeda,
             R.drawable.asteroids,
             R.drawable.astronut,
@@ -118,23 +118,23 @@ public class Questions {
     };
 
     // method returns number of questions
-    public int getLength(){
+    int getLength(){
         return question_images_list.length;
     }
 
     // method returns question from array question_images_list based on array index
-    public int get_question(int a){
+    int get_question(int a){
         return question_images_list[a];
     }
 
     // method return a single multiple choice item for question based on array index,
     // based on number of multiple choice item in the list - 1, 2, 3 or 4 as an argument
-    public String get_choice(int index, int num) {
+    String get_choice(int index, int num) {
         return multipleChoice[index][num-1];
     }
 
     //  method returns correct answer for the question based on array index
-    public String get_correct_answer(int a){
+    String get_correct_answer(int a){
         return correct_answer[a];
     }
 

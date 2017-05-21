@@ -13,4 +13,8 @@
     <string name="save">Save</string>
     <string name="reset">Reset</string>
     <string name="background_music">Background Music</string>
+    <string name="your_final_score">Your Score: </string>
+    <string name="high_score">High Score: </string>
+    <string name="new_high_score">New High Score: </string>
+    <string name="share">Share</string>
 </resources>

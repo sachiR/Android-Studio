@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class HighestScoreActivity extends AppCompatActivity {
 
@@ -28,11 +27,13 @@ public class HighestScoreActivity extends AppCompatActivity {
         //display current score
         textScoreView.setText("Your Score: " + score);
 
+
         //use Shared preferences to save the best score
         SharedPreferences myPreferences = getPreferences(MODE_PRIVATE);
         int highScore = myPreferences.getInt("highScore",0);
         if(highScore>= score)
             textHighScoreView.setText("High Score: " + highScore);
+
         else
         {
             textHighScoreView.setText("New High Score: " + score);

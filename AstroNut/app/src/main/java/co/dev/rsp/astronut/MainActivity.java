@@ -5,8 +5,6 @@ import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.CheckBox;
-import android.widget.CompoundButton;
 import android.widget.ImageButton;
 
 
@@ -16,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
     ImageButton newGameBtn, settingsBtn;
     Intent intent;
     MediaPlayer mediaPlayer;
-    public static int musicChecked = 0; // music is on
 
 
     @Override
