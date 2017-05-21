@@ -1,9 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activityHighScore"
     android:layout_width="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
     android:layout_height="match_parent"
     tools:context="co.dev.rsp.astronut.HighestScoreActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/textScore"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:text="@string/your_score"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <TextView
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:text="@string/divide_line"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <TextView
+        android:id="@+id/textHighScore"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:text="@string/highest_score"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/buttonReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1"
+            android:onClick="onClick"
+            style="?android:attr/buttonBarButtonStyle"
+            android:text="@string/try_again" />
+
+        <Button
+            android:id="@+id/buttonHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onClick"
+            style="?android:attr/buttonBarButtonStyle"
+            android:text="@string/home"
+            android:weightSum="1" />
+
+        <Button
+            android:id="@+id/buttonSettings"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onClick"
+            android:text="@string/settings"
+            android:weightSum="1" />
+
+    </LinearLayout>
+
+</LinearLayout>

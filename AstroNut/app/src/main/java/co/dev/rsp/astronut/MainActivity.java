@@ -13,7 +13,6 @@ public class MainActivity extends AppCompatActivity {
 
     private Questions questionBack = new Questions();
     private TextView currentTotalScoreView;   // view for current total score
-    private TextView counddownTimer; // timer
     private ImageView currentQuestionView;  //current question to answer
     private Button buttonChoice1; // multiple choice 1 for mQuestionView
     private Button buttonChoice2; // multiple choice 2 for mQuestionView
@@ -33,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
         //setting up game screen for the first question and four multiple choice answers
         currentTotalScoreView = (TextView) findViewById(R.id.txtScore);
         currentQuestionView = (ImageView) findViewById(R.id.image_view);
-        counddownTimer = (TextView) findViewById(R.id.txtTime);
         buttonChoice1 = (Button) findViewById(R.id.btn1);
         buttonChoice2 = (Button) findViewById(R.id.btn2);
         buttonChoice3 = (Button) findViewById(R.id.btn3);
@@ -70,16 +68,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClick(View view){
-        //all buttons and their logics
+        //all buttons and their logic
         Button answer = (Button) view;
 
         //if the answer is correct, increase the score
         if (answer.getText() == correctAnswer){
             totalScore = totalScore + 1;
-            Toast.makeText(MainActivity.this,"Correct!", Toast.LENGTH_SHORT).show();
+           // Toast.makeText(MainActivity.this,"Correct!", Toast.LENGTH_SHORT).show();
         }
         else {
-            Toast.makeText(MainActivity.this,"Wrong!",Toast.LENGTH_SHORT).show(); }
+            Toast.makeText(MainActivity.this,"Wrong! It Is "+ correctAnswer,Toast.LENGTH_SHORT).show(); }
 
         //show current total score for the user
         updateScore(totalScore);
