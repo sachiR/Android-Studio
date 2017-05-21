@@ -47,5 +47,5 @@ public class MainActivity extends AppCompatActivity {
         mediaPlayer = MediaPlayer.create(this, R.raw.background_app_music);
         mediaPlayer.start();
     }
-    }
+}
 

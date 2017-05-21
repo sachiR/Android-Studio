@@ -6,6 +6,7 @@
     android:layout_alignParentTop="true"
     android:layout_gravity="center"
     android:gravity="center"
+    android:background="@drawable/game_screen_background"
     android:orientation="vertical"
     android:padding="10dp"
     android:layout_height="match_parent"
@@ -17,14 +18,16 @@
         android:layout_height="wrap_content"
         android:text="@string/your_score"
         android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/white" />
 
     <TextView
         android:layout_width="348dp"
         android:layout_height="wrap_content"
         android:text="@string/divide_line"
         android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/white" />
 
     <TextView
         android:id="@+id/textHighScore"
@@ -32,7 +35,8 @@
         android:layout_height="wrap_content"
         android:text="@string/highest_score"
         android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/white" />
 
     <LinearLayout
         android:layout_width="wrap_content"
